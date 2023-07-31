@@ -10,7 +10,8 @@ function Signup() {
     let data = new FormData(e.currentTarget)  
     
     
-    axios.post("http://localhost:8000/signup/", data)
+    // axios.post("http://localhost:8000/signup/", data)
+    axios.post("https://fonis.pythonanywhere.com/", data)
     .then((response) => {
       if(response.data === "signup successful"){
         alert("account created ");
