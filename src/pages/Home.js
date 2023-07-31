@@ -20,7 +20,7 @@ function Home() {
   useEffect(() =>{
 
     // axios.get("http://localhost:8000/getdepartment")
-    axios.get("https://fonis.pythonanywhere.com/")
+    axios.get("https://fonis.pythonanywhere.com/git")
     .then((response) => setDpt(response.data))
     .catch((err) => console.log(err))
 
